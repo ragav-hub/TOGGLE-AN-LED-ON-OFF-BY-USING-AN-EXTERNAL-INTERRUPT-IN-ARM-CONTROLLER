@@ -31,66 +31,35 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 ```
 #include "main.h" 
-
 #include "stdbool.h"
-
 bool buttonstatus; 
-
-
 void pushbutton();
-
 void SystemClock_Config(void);
-
 static void MX_GPIO_Init(void); 
-
 int main(void)
-
 {
-
 HAL_Init();
-
 SystemClock_Config(); 
-
 MX_GPIO_Init();
-
 while (1)
-
 {
-
 pushbutton();
-
 }
-
 }
-
 void pushbutton()
-
 {
-
 buttonstatus=HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13); 
-
 if(buttonstatus==0)
-
 {
-
 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-
 HAL_Delay(200);
-
 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-
 HAL_Delay(200);
-
 }
-
 else
-
 {
-
 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-
 }
-
 }
 ```
 
