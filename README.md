@@ -66,11 +66,10 @@ HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 **OUTPUT:**
 
 ![WhatsApp Image 2025-11-11 at 19 02 51](https://github.com/user-attachments/assets/3224decc-8bc3-4b49-9de5-7e4b87159382)
-
-
-
-
-
+<br
+<br>
+<br>
+<br>
 ![WhatsApp Image 2025-11-11 at 19 35 02 (1)](https://github.com/user-attachments/assets/05aa9c99-2bba-4fd1-b250-f8e61431eeaf)
 <br>
 <br>
